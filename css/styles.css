@@ -8,8 +8,8 @@
 
 *,
 *::after,
-*::before{
-    box-sizing: border-box;
+*::before {
+  box-sizing: border-box;
 }
 
 /* Typography */
@@ -161,74 +161,95 @@ a {
 
 /* icons */
 
-.icon{
-    width: 40px;
-    height: 40px;
+.icon {
+  width: 40px;
+  height: 40px;
 }
 
-.icon--primary{
-    fill: var(--color-primary);
+.icon--primary {
+  fill: var(--color-primary);
 }
 
-.icon-container{
-    background: #f3f9fa;
-    width: 64px;
-    height: 64px;
-    border-radius: 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Buttons */
 
-.btn{
-    border-radius: 40px;
-    border: 0;
-    cursor: pointer;
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 2rem 3rem;
-    text-align: center;
-    text-transform: uppercase;
-    white-space: nowrap;
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
-.btn--primary{
-    background: var(--color-primary);
-    color: #fff;
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
 }
 
-.btn--primary:hover{
-    background: #3a8ffd;
+.btn--primary:hover {
+  background: #3a8ffd;
 }
 
-.btn--secondary{
-    background: var(--color-secondary);
-    color: #fff;
+.btn--secondary {
+  background: var(--color-secondary);
+  color: #fff;
 }
 
-.btn--secondary:hover{
-    background: #00c8eb;
+.btn--secondary:hover {
+  background: #00c8eb;
 }
 
-.btn--accent{
-    background: var(--color-accent);
-    color: #fff;
+.btn--accent {
+  background: var(--color-accent);
+  color: #fff;
 }
 
-.btn--accent:hover{
-    background: #ec3000;
+.btn--accent:hover {
+  background: #ec3000;
 }
 
-.btn--block{
-    width: 100%;
-    display: inline-block;
+.btn--block {
+  width: 100%;
+  display: inline-block;
 }
 
-@media screen and (min-width: 1024px){
-    .btn{
-        font-size: 1.5rem;
-    }
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* Inputs */
+
+.input {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  color: var(--color-headings);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+  color: #cbcdd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
 }
