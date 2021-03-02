@@ -14,44 +14,23 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section class="block container">
-      <header class="block__header">
-        <h2 class="block__heading">Heading</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo deleniti
-          cum similique numquam, suscipit nulla dolorum odit temporibus iure
-          voluptate nobis sint accusamus? Unde magnam ratione, quaerat quis
-          voluptatum minus!
-        </p>
-      </header>
+    <nav class="nav collapsible">
+      <a href="/"
+        ><img class="logo" src="images/logo_transparent.png" alt="Implework logo"
+      /></a>
 
-      <div style="width:30%">
-        <div class="card card--primary">
-          <header class="card__header">Card Title</header>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
 
-          <div class="card__body">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel culpa
-            incidunt sint, suscipit aliquam minima nobis. Optio magnam dolorum
-            praesentium sed explicabo, quam harum! Error eligendi voluptatibus
-            vitae laborum possimus.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="block block--dark block--skewed-left">
-      <div class="container">
-        <header class="block__header">
-          <h2 class="block__heading">Heading</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-            deleniti cum similique numquam, suscipit nulla dolorum odit
-            temporibus iure voluptate nobis sint accusamus? Unde magnam ratione,
-            quaerat quis voluptatum minus!
-          </p>
-        </header>
-      </div>
-    </section>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">About Us</a></li>
+        <li class="nav__item"><a href="#">Services</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+        <li class="nav__item"><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
     <script src="js/main.js "></script>
   </body>
 </html>
