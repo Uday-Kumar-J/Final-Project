@@ -15,12 +15,6 @@
   box-sizing: border-box;
 }
 
-/* Logo */
-
-.logo {
-  width: 100px;
-}
-
 /* Typography */
 
 ::selection {
@@ -217,7 +211,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -309,6 +303,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input--group .btn {
@@ -331,7 +326,7 @@ a {
 
 .card__header,
 .card__body {
-  padding: 2rem 3rem;
+  padding: 2rem 7%;
 }
 
 .card--primary .card__header {
@@ -366,11 +361,11 @@ a {
 }
 
 .plan__price {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .plan__billing-cycle {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 300;
   opacity: 0.8;
   margin-right: 1rem;
@@ -387,17 +382,13 @@ a {
   margin-bottom: 2rem;
 }
 
-.plan--popular {
-  transform: scale(1.1);
-}
-
 .plan--popular .card__header {
   position: relative;
 }
 
 .plan--popular .card__header::before {
   content: url(../images/popular.svg);
-  display: block;
+  display: inline-block;
   position: absolute;
   right: 5%;
   top: -6px;
@@ -413,6 +404,10 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+  .plan--popular {
+    transform: scale(1.1);
+  }
+
   .plan__name {
     font-size: 1.4rem;
   }
@@ -708,6 +703,10 @@ a {
   border-radius: 5px;
 }
 
+.nav__brand {
+  transform: translateY(5px);
+}
+
 @media screen and (min-width: 768px) {
   .nav__toggler {
     display: none;
@@ -760,8 +759,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -773,6 +773,7 @@ a {
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-rows: auto;
   }
 }
 
@@ -784,6 +785,7 @@ a {
 
 .block-plan .card {
   max-width: 500px;
+  margin: 0 auto;
 }
 
 /* Features */
@@ -837,14 +839,13 @@ a {
   background: #232323;
 }
 
-.footer a{
+.footer a {
   color: #777;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
-.footer a:hover{
+.footer a:hover {
   color: #fff;
-
 }
 
 .footer__section {
@@ -852,7 +853,7 @@ a {
   border-bottom: 1px solid #393939;
 }
 
-.footer__section .list{
+.footer__section .list {
   margin: 0;
 }
 
@@ -866,7 +867,7 @@ a {
   text-align: center;
 }
 
-.footer__brand img{
+.footer__brand img {
   /* TODO: Consider refactoring this and apply it to all */
   width: 100%;
   max-width: 230px;
@@ -882,30 +883,34 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 
-  .footer .collapsible_chevron{
+  .footer .collapsible_chevron {
     display: none;
   }
 
-  .footer .collapsible__content{
+  .footer .collapsible__content {
     opacity: 1;
     max-height: 100%;
   }
 
-  .footer__brand{
+  .footer__brand {
     order: -1;
     margin-top: 1rem;
-
   }
 
-  .footer__copyright{
+  .footer__copyright {
     font-size: 1.5rem;
   }
 
-  .footer__section{
+  .footer__section {
     border: 0;
   }
 
-  .footer__heading{
+  .footer__heading {
     font-size: 1.6rem;
   }
+}
+
+/* Sign up callout */
+.callout-signup{
+  transform: translateY(5rem);
 }
